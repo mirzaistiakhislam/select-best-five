@@ -17,7 +17,7 @@
 
         <div class="max-h-min p-24 w-full grid content-center bg-black">
             <img class=" w-1/4 mx-auto" src="images/manu-logo2.png" alt="">
-            <h1 class="text-5xl  text-center text-red-600 font-extrabold">
+            <h1 class="text-5xl text-center text-red-600 font-extrabold">
                 Manchester United
                 F.C.</h1>
         </div>
@@ -151,7 +151,7 @@
                     <div class="overflow-x-auto">
                         <table class="w-full text-xl player-list-count">
 
-                            <tbody id="player-list">
+                            <tbody class="text-white" id="player-list">
 
                             </tbody>
                         </table>
@@ -161,7 +161,7 @@
                 <div class="h-1/2 bg-black p-4">
                     <h1 class="text-3xl text-center p-5 text-white mb-5">Budget</h1>
                     <p class="inline">Per Player</p> <input id="per-player" type="text"
-                        class="border-collapse border border-slate-200 bg-gray-900 p-1 w-36 ml-6 "> <br> <br>
+                        class="border-collapse border border-slate-200 bg-gray-900 p-1 w-36 text-white"> <br> <br>
                     <button id="calculate-btn"
                         class="px-5 py-2 btn bg-cyan-900 text-white text-white w-full rounded-none text-xl mb-3">Calculate</button>
 
@@ -169,17 +169,18 @@
                     <p class="inline">$<span id="player-expenses">0</span></p> <br> <br>
 
                     <p class="inline">Manager</p> <input id="manager-expenses" type="text"
-                        class="border-collapse border border-slate-200 bg-black p-1 w-36 ml-7"> <br> <br>
+                        class="border-collapse border border-slate-200 bg-black p-1 w-36 ml-6 text-white"> <br> <br>
 
                     <p class="inline">Coach</p> <input id="coach-expenses" type="text"
-                        class="border-collapse border border-slate-200 bg-black p-1 w-36 ml-12"> <br> <br>
+                        class="border-collapse border border-slate-200 bg-black p-1 w-36 ml-11 text-white"> <br> <br>
 
                     <button id="calculate-total-button"
-                        class="px-5 py-2 btn bg-cyan-900 text-white text-white w-full rounded-none text-xl mb-3">Calculate
+                        class="px-5 py-2 btn bg-cyan-900 text-white  w-full rounded-none text-xl mb-3">Calculate
                         Total</button>
 
                     <p class="inline mr-6 font-semibold ">Total</p>
-                    <p class="inline ml-32">$<span id="total">0</span></p>
+                    <p class="inline ml-20 text-orange-600">$<span id="total">0</span></p>
+
 
                 </div>
 
