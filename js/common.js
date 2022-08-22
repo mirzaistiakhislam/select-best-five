@@ -7,5 +7,6 @@ function inputField(element) {
 
 function textField(element) {
     const playerExpenses = document.getElementById(element);
+    // const playerExpense = parseFloat(playerExpenseString);
     return playerExpenses;
 }

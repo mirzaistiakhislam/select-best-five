@@ -1,18 +1,15 @@
 document.getElementById('calculate-total-button').addEventListener('click', function () {
-    const managerExpensesInputField = document.getElementById('manager-expenses');
-    const managerExpensesString = managerExpensesInputField.value;
-    const managerExpenses = parseFloat(managerExpensesString);
 
-    const coachExpensesInputField = document.getElementById('coach-expenses');
-    const coachExpensesString = coachExpensesInputField.value;
-    const coachExpenses = parseFloat(coachExpensesString);
+    const managerExpenses = inputField('manager-expenses');
+    const coachExpenses = inputField('coach-expenses');
 
-    const playerExpensesString = document.getElementById('player-expenses').innerText;
-    const playerExpenses = parseFloat(playerExpensesString);
+    const playerExpensesTextField = textField('player-expenses');
+    playerExpenses = parseFloat(playerExpensesTextField.innerText);
+
 
     const totalExpenses = managerExpenses + coachExpenses + playerExpenses;
-    const total = document.getElementById('total');
 
+    const total = textField('total');
     total.innerText = totalExpenses;
 
 
