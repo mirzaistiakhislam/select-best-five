@@ -1,12 +1,16 @@
-function inputField(element) {
-    const getInputField = document.getElementById(element);
+function inputField(elementId) {
+
+    const getInputField = document.getElementById(elementId);
     const inputFieldString = getInputField.value;
     const inputField = parseFloat(inputFieldString);
     return inputField;
+
+
+
+
 }
 
-function textField(element) {
-    const playerExpenses = document.getElementById(element);
-    // const playerExpense = parseFloat(playerExpenseString);
-    return playerExpenses;
+function textField(elementId) {
+    const textField = document.getElementById(elementId);
+    return textField;
 }

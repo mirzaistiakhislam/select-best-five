@@ -2,13 +2,12 @@ const selectFive = [];
 
 function addToSelectFive(element) {
 
-
     const getPlayerName = element.parentNode.parentNode.children[0].innerText;
+
 
     const playerName = {
         playerName: getPlayerName
     }
-
 
     selectFive.push(playerName);
 
@@ -16,14 +15,12 @@ function addToSelectFive(element) {
         displayPlayerName();
         element.setAttribute('disabled', true);
     }
-
 }
 
 function displayPlayerName() {
 
-    const playerList = document.getElementById('player-list');
+    const playerList = textField('player-list'); // connected with common.js
     playerList.innerText = '';
-
 
     for (let i = 0; i < selectFive.length; i++) {
 
@@ -35,13 +32,10 @@ function displayPlayerName() {
             <td>${selectFive[i].playerName}</td>
             `;
             playerList.appendChild(tr);
-
         }
         else {
-
             alert("Limit Exceeded !!");
             element.setAttribute('disabled', false);
-
         }
     }
 
