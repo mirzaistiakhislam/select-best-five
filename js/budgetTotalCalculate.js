@@ -1,13 +1,3 @@
-document.getElementById('calculate-btn').addEventListener('click', function () {
-
-    const perPlayer = inputField('per-player');
-
-    const playerExpenses = textField('player-expenses');
-    playerExpenses.innerText = (selectFive.length) * perPlayer;
-
-
-})
-
 document.getElementById('calculate-total-button').addEventListener('click', function () {
     const managerExpensesInputField = document.getElementById('manager-expenses');
     const managerExpensesString = managerExpensesInputField.value;

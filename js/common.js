@@ -1,8 +1,8 @@
 function inputField(element) {
-    const perPlayerInputField = document.getElementById(element);
-    const perPlayerString = perPlayerInputField.value;
-    const perPlayer = parseFloat(perPlayerString);
-    return perPlayer;
+    const getInputField = document.getElementById(element);
+    const inputFieldString = getInputField.value;
+    const inputField = parseFloat(inputFieldString);
+    return inputField;
 }
 
 function textField(element) {
