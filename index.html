@@ -11,11 +11,11 @@
 
 </head>
 
-<body class="font-mono">
+<body class="font-mono box-sizing: border-box;">
 
     <header>
 
-        <div class="max-h-min p-24 w-full grid content-center bg-black">
+        <div class="max-h-min p-24 w-full grid content-center bg-slate-800">
             <img class=" w-1/4 mx-auto" src="images/manu-logo2.png" alt="">
             <h1 class="text-5xl text-center text-red-600 font-extrabold">
                 Manchester United
@@ -147,7 +147,9 @@
             <div>
 
                 <div class="h-80 bg-black mb-4 p-5">
-                    <h1 class="text-3xl text-center p-5 text-white">Selected-V</h1>
+                    <h1 class="text-3xl text-center p-5 text-white underline hover:underline-offset-8 text-red-500">
+                        Selected-V
+                    </h1>
                     <div class="overflow-x-auto">
                         <table class="w-full text-xl player-list-count">
 
@@ -159,20 +161,22 @@
                 </div>
 
                 <div class="h-1/2 bg-black p-4">
-                    <h1 class="text-3xl text-center p-5 text-white mb-5">Budget</h1>
+                    <h1
+                        class="text-3xl text-center p-5 text-white mb-5 underline hover:underline-offset-8 text-red-500">
+                        Budget</h1>
                     <p class="inline">Per Player</p> <input id="per-player" type="text"
                         class="border-collapse border border-slate-200 bg-gray-900 p-1 w-36 text-white"> <br> <br>
                     <button id="calculate-btn"
                         class="px-5 py-2 btn bg-cyan-900 text-white text-white w-full rounded-none text-xl mb-3">Calculate</button>
 
                     <p class="inline mr-4">Player Expenses</p>
-                    <p class="inline">$<span id="player-expenses">0</span></p> <br> <br>
+                    <p class="inline text-orange-600">$<span id="player-expenses">0</span></p> <br> <br>
 
                     <p class="inline">Manager</p> <input id="manager-expenses" type="text"
-                        class="border-collapse border border-slate-200 bg-black p-1 w-36 ml-6 text-white"> <br> <br>
+                        class="border-collapse border border-slate-200 bg-gray-900 p-1 w-36 ml-6 text-white"> <br> <br>
 
                     <p class="inline">Coach</p> <input id="coach-expenses" type="text"
-                        class="border-collapse border border-slate-200 bg-black p-1 w-36 ml-11 text-white"> <br> <br>
+                        class="border-collapse border border-slate-200 bg-gray-900 p-1 w-36 ml-11 text-white"> <br> <br>
 
                     <button id="calculate-total-button"
                         class="px-5 py-2 btn bg-cyan-900 text-white  w-full rounded-none text-xl mb-3">Calculate
